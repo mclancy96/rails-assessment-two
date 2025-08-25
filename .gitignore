@@ -8,16 +8,66 @@
 /.bundle
 
 # Ignore the default SQLite database.
-/db/*.sqlite3
+
+# Ignore SQLite databases and related files
+/db/*.sqlite3*
 /db/*.sqlite3-journal
+/db/*.sqlite3-shm
+/db/*.sqlite3-wal
+/db/*.db
+/db/*.db-journal
+/db/*.db-shm
+/db/*.db-wal
 
 # Ignore all logfiles and tempfiles.
+
+# Ignore all logfiles and tempfiles
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
+
+# Node and Yarn
 /node_modules
 /yarn-error.log
+/yarn-debug.log*
 
-.byebug_history
+
+# Ruby, Rails, and editor files
+/.byebug_history
+/.pry_history
+/.irb-history
+/.irb_history
+/.rspec_status
+/.env
+/.env.*
+/.ruby-version
+/.ruby-gemset
+/coverage/
+/public/assets
+/public/packs
+/public/packs-test
+/public/uploads
+/storage/*
+!/storage/.keep
+/master.key
+/config/credentials.yml.enc
+/config/master.key
+/config/initializers/secret_token.rb
+/config/initializers/session_store.rb
+/config/secrets.yml
+
+# VSCode, Sublime, and JetBrains IDEs
+.vscode/
+*.sublime-workspace
+*.sublime-project
+.idea/
+.DS_Store
+*.swp
+*~
+*.bak
+*.tmp
+*.orig
+*.rej
+*.iml
