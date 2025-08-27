@@ -1,3 +1,4 @@
 class Vendor < ApplicationRecord
-  has_and_belongs_to_many :sweets, join_table: 'vendor_sweets'
+  has_many :vendor_sweets
+  has_many :sweets, through: :vendor_sweets
 end
